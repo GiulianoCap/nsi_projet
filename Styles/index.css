@@ -71,8 +71,13 @@ header .menu li {
     display: block;
     float: left;
     padding: 14px 16px;
+    padding-top: 14px;
     text-align: center;
 }
+
+header .menu li .button{
+    transition: all .5s;
+} 
 
 header .menu li.button:hover:not(.active){
     font-weight: bold;
@@ -83,7 +88,7 @@ header .menu li.button:hover:not(.active){
 }
 
 header .menu li img{
-  height: 35px;
+    height: 35px;
 }
 
 header .menu li a{
@@ -138,6 +143,10 @@ main #intro .welcome {
     margin: 0;
 }
 
+main #intro .after-welcome{
+    font-size: 20px;
+}
+
 /* #language et #breach regroupés*/
 
 main section#left {
@@ -190,28 +199,28 @@ main section#right {
    width: 200px;
 }
 
-/* image de breach */
-
-.img_breach{
-    margin: 15px;
-    margin-top: 55px;
-    margin-right: 0;
-}
-
-.img_breach img{
-   width: 350px;
-}
-
 /* image sur os */
 
 .img_os{
     margin: 15px;
-    margin-top: 40px;
+    margin-top: 35px;
     margin-left: 0;
 }
 
 .img_os img{
    width: 300px;
+}
+
+/* image de breach */
+
+.img_breach{
+    margin: 15px;
+    margin-top: 75px;
+    margin-right: 0;
+}
+
+.img_breach img{
+   width: 350px;
 }
 
 /* Footer */
@@ -235,6 +244,7 @@ footer div ul{
     list-style-type: none;
     margin: 25px;
     padding: 0;
+    font-size: 16px;
 }
 
 footer div ul li {
@@ -245,7 +255,6 @@ footer div ul li {
 footer div ul li div.horizontal-line{
     border: none;
     border-top: solid 3px #00ff00;
-    width: 140px;
 }
 
 footer a{
@@ -264,8 +273,81 @@ footer a img{
     margin-bottom: auto;
 }
 
-/* @media only screen and (max-width: 600px) {
-    footer {
-      background-color: lightblue;
+@media screen and (max-width: 1930px) {
+
+    header ul {
+        font-size: 20px;
     }
-  } */
+
+    header .menu li {
+        margin-top: 8px;
+    }
+
+    header .menu li.title {
+        margin-top: 9px;
+    }
+
+    header .menu li.slogan {
+        font-size: 18px;
+    }
+    
+    header .menu li img {
+        height: 25px;
+    }
+
+    header .menu li div.vertical_line {
+        height: 25px;
+    }
+
+    main section#intro {
+        margin-left: 500px;
+        margin-right: 500px;
+    }
+
+    main section#intro .welcome,
+    main .title {
+        font-size: 25px;
+    }
+
+    main section#intro .after-welcome, 
+    main section#left, main section#right {
+        font-size: 18px;
+    }
+
+    .img_langage {
+        margin-top: 35px;
+    }
+
+    .img_langage img {
+        width: 150px;
+    }
+
+    .img_os {
+        margin-top: 34px;
+    }
+
+    .img_os img {
+        width: 250px;
+    }
+
+    .img_breach {
+        margin-top: 65px;
+    }
+
+    .img_breach img {
+        width: 300px;
+    }
+
+    footer div ul {
+        font-size: 14px;
+    }
+ 
+    footer a img{
+        width: 60px;
+    }
+
+    footer div ul li div.horizontal-line {
+        border-top: solid 2px #00ff00;
+    }
+
+  }
