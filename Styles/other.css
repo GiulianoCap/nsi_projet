@@ -4,6 +4,14 @@
     color: #fff;
 }
 
+ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+*:hover{
+    transition: transform .7s ease-in-out;
+    transform: rotate(360deg);
+}
+
+ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+
 html {
     background-image: url(../Images/background.png);
     font-family: 'Ubuntu', sans-serif;
@@ -75,7 +83,6 @@ th, td {
 
 table {
     border: 1px solid #00ff00;
-    /* text-align: center; */
     width: 100%;
     background-color: #00ff00;
     border-radius: 10px;
@@ -88,8 +95,9 @@ th {
     text-align: center;
 }
 
+main section,
 td {
-    background-color: #424949;  
+    background-color: #424949; 
 }
 
 /* Header qui sert de barre de navigation*/
@@ -123,14 +131,26 @@ header .menu li .button{
 
 header .menu li.button:hover:not(.active){
     font-weight: bold;
+    box-shadow: 3px 2px 5px #00ff00;
+    transition: all .5s;
 }
 
 header .menu li img{
     height: 20px;
+    transition: transform .7s ease-in-out;
+}
+
+header .menu li img:hover {
+    transform: rotate(360deg);
 }
 
 header .menu li.title {
     margin-top: 5px;
+}
+
+header .menu li.title:hover {
+    box-shadow: 3px 2px 5px #00ff00;
+    transition: all .5s;
 }
 
 header .menu li div.vertical_line {
@@ -146,7 +166,7 @@ header .menu li.slogan {
 }
 
 header .menu .horizontal-line {
-    border-bottom: 4px solid #00ff00;
+    border-bottom: 3px solid #00ff00;
     height: 52px;
     float: none;
 }
@@ -161,9 +181,8 @@ main section#first {
     margin-top: 0.75%;
     margin-bottom: 0.75%;
     padding: 10px;
-    border: solid 5px #00ff00;
+    border: solid 4px #00ff00;
     border-radius: 20px;
-    background-color: #424949;
     text-align: center;
     font-size: 15px;
 }
@@ -187,9 +206,8 @@ main section#left {
     margin-top: 0.75%;
     margin-bottom: 0.75%;
     padding: 15px;
-    border: solid 5px #00ff00;
+    border: solid 4px #00ff00;
     border-radius: 20px;
-    background-color: #424949;
     text-align: center;
     width: max-content;
 }
@@ -203,9 +221,8 @@ main section#right {
     margin-top: 0.75%;
     margin-bottom: 0.75%;
     padding: 15px;
-    border: solid 5px #00ff00;
+    border: solid 4px #00ff00;
     border-radius: 20px;
-    background-color: #424949;
     text-align: center;
     width: max-content;
 }
@@ -423,12 +440,12 @@ footer div ul{
 footer div ul li {
     padding-bottom: 5px;
     padding-top: 5px;
-    font-size: 12px;
+    font-size: 9px;
 }
 
 footer div ul li div.horizontal-line{
     border: none;
-    border-top: solid 3px #00ff00;
+    border-top: solid 2px #00ff00;
 }
 
 footer a.github{
@@ -436,7 +453,7 @@ footer a.github{
 }
 
 footer a img{
-    width: 70px;
+    width: 50px;
     margin-right: 25px;
     margin-top: 50%;
     margin-bottom: max-content;
