@@ -2,10 +2,10 @@
 
 * {
     color: #fff;
+    transition: transform .7s ease-in-out;
 }
 
 *:hover{
-    transition: transform .7s ease-in-out;
     transform: rotate(360deg);
 }
 
