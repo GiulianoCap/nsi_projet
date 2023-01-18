@@ -1,0 +1,274 @@
+/* CSS pour la page en général */
+
+* {
+    color: #fff;
+}
+
+html {
+    background-image: url(../Images/background.png);
+    font-family: 'Ubuntu', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+hr{
+    height: 1px;
+    background-color: #00ff00;
+    border: none;
+}
+
+img {
+    border-radius: 10%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.green_text {
+    color:#00ff00;
+    font-weight: bold;
+}
+
+main section{
+    background-color: #424949; 
+}
+
+main section div{
+    display: inline-block;
+}
+
+div.text {
+    display: top;
+    vertical-align: top;
+    font-size: 15px;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section .title {
+    font-size: 23px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+/* Header */
+
+header ul {
+    list-style-type: none;
+    background-color: #000;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+  
+header .menu li {
+    margin-top: 4px;
+    display: block;
+    float: left;
+    padding: 6px;
+    padding-top: 14px;
+    text-align: center;
+}
+
+header .menu li .button{
+    transition: all .5s;
+} 
+
+
+header .menu li.button:hover:not(.active){
+    font-weight: bold;
+    box-shadow: 3px 2px 5px #00ff00;
+    transition: all .5s;
+}
+
+header .menu li img{
+    height: 20px;
+    transition: transform .7s ease-in-out;
+}
+
+header .menu li img:hover {
+    transform: rotate(360deg);
+}
+
+header .menu li.title {
+    margin-top: 5px;
+}
+
+header .menu li.title:hover {
+    box-shadow: 3px 2px 5px #00ff00;
+    transition: all .5s;
+}
+
+header .menu li div.vertical_line {
+    border-left: 3px solid #00ff00;
+    height: 28px;
+}
+
+header .menu li.slogan {
+    margin-top: 4px;
+    font-size: 13px;
+    font-style: italic;
+    float: right;
+}
+
+header .menu .horizontal-line {
+    border-bottom: 3px solid #00ff00;
+    height: 52px;
+    float: none;
+}
+
+/* #intro */
+
+main section#intro {
+    float: none;
+    height: 100%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 0.75%;
+    margin-bottom: 0.75px;
+    padding: 10px;
+    border: solid 4px #00ff00;
+    border-radius: 20px;
+    background-color: #424949;
+    text-align: center;
+    font-size: 15px;
+}
+
+main #intro .welcome {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* pour tous les blocks de gauche */
+
+main section#left {
+    float: left;
+    height: 100%;
+    margin-left: 10%;
+    margin-top: 0.75%;
+    margin-bottom: 0.75%;
+    padding: 15px;
+    border: solid 4px #00ff00;
+    border-radius: 20px;
+    background-color: #424949;
+    text-align: center;
+    width: max-content;
+}
+
+main section#left:enabled{
+    background-color: white;
+}
+
+/* pour tous les blocks de droite*/
+
+main section#right {
+    float: right;
+    height:100%;
+    margin-right: 10%;
+    margin-top: 0.75%;
+    margin-bottom: 0.75%;
+    padding: 15px;
+    border: solid 4px #00ff00;
+    border-radius: 20px;
+    background-color: #424949;
+    text-align: center;
+    width: max-content;
+}
+
+/* diffrentes images de la page */
+
+/* image de language */
+
+.img_langage{
+    margin: 10px;
+    margin-top: 25px;
+    margin-right: 0;
+}
+
+.img_langage img{
+   width: 120px;
+}
+
+/* image sur os */
+
+.img_os{
+    margin: 10px;
+    margin-top: 33px;
+    margin-left: 0;
+}
+
+.img_os img{
+   width: 200px;
+}
+
+/* image de breach */
+
+.img_breach{
+    margin: 10px;
+    margin-top: 57px;
+    margin-right: 0;
+}
+
+.img_breach img{
+   width: 250px;
+}
+
+/* Footer */
+
+footer{
+    display: inline-block;
+    margin: 0;
+    margin-top: 15px;
+    padding: 5px;
+    color: #00ff00;
+    background-color: #000;
+    width: 100%;
+}
+
+footer div {
+    float: left;
+}
+
+footer div ul{
+    list-style-type: none;
+    margin: 25px;
+    padding: 0;
+}
+
+footer div ul li {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 9px;
+}
+
+footer div ul li div.horizontal-line{
+    border: none;
+    border-top: solid 2px #00ff00;
+}
+
+footer a.github{
+    float: right;
+}
+
+footer a img{
+    width: 50px;
+    margin-right: 25px;
+    margin-top: 50px;
+    margin-bottom: auto;
+}
