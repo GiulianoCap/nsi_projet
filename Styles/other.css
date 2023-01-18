@@ -4,13 +4,10 @@
     color: #fff;
 }
 
- /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
 *:hover{
     transition: transform .7s ease-in-out;
     transform: rotate(360deg);
 }
-
- /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
 
 html {
     background-image: url(../Images/background.png);
